@@ -1,7 +1,7 @@
 module.exports = function() {
     
     var base_dev_dir = "dev/"
-    var base_prod_dir = "docs/";
+    var base_prod_dir = "dist/";
 
     // Configurazioni esportate
     var config = {

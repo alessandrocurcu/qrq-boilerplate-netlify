@@ -249,8 +249,8 @@ gulp.task("useref", function () {
  * Questo task deve usare la flag --prod (gulp build --prod)
  */
 gulp.task("build", function(cb) {
-    runSequence("clean", "pug", "sass", "js", "image", "useref");
-
+    runSequence("clean", "pug", "sass", "js");
+    // runSequence("clean", "pug", "sass", "js", "image", "useref");
 });
 
 gulp.task("clean", function() {
