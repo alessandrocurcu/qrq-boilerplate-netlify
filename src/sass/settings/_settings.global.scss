@@ -1,0 +1,63 @@
+@include border-box-sizing;
+
+/**
+ * 1. Evita dei problemi circa l'ingrandimento dei font su Webkit e Windows mobile
+ * 2. Toglie l'alone grigio sui link su mobile una volta che vengono premuti.
+ */
+html {
+  @include qrq-system-font-stack;
+  @include typi-base();
+  -webkit-text-size-adjust: 100%; // [1]
+  -ms-text-size-adjust:100%; // [1]
+  -webkit-tap-highlight-color: transparent; // [2]
+  background-color: $bgc;
+  color: $tc;
+}
+
+html, body, div, object, iframe, fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header, footer, nav, section, article, hgroup, figure {
+  display: block; 
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  text-decoration: none;
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+
+img, object, video {
+  max-width: 100%;
+  border: 0;
+}
+
+input {
+  padding: 0;
+  border: 0;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
