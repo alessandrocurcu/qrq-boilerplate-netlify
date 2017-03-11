@@ -30,13 +30,16 @@ Per info: https://www.netlifycms.org/docs/intro/
 * Autoprefixer
 * Uncss
 * Combine media queries
-* Useref
+* Useref (con CSSO)
 
 ### JS
-* Useref
+* Useref (con Uglify)
 
 ### Immagini
 * Imagemin
+
+## JS Bundler
+* Browserify
 
 ## ToDo
 * Autoprefixer: definisci nel task i browser da supportare.
