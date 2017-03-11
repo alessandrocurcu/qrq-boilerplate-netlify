@@ -1,6 +1,7 @@
 # README
 
 Boilerplate per siti gestiti tramite Netlify CMS.
+Per info: https://www.netlifycms.org/docs/quick-start/
 
 ## Librerie esterne
 ### SASS
